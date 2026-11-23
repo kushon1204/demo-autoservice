@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Автосервис «Транзит» — компьютерная диагностика в Новосибирск</title>
+<meta name="description" content="Автосервис «Транзит»: компьютерная диагностика, ремонт двигателя, ходовая и подвеска. Новосибирск. Звоните — подберём решение и назовём цену.">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<link rel="canonical" href="https://example.com/">
+<meta name="theme-color" content="#ffb020">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Автосервис «Транзит»">
+<meta property="og:title" content="Автосервис «Транзит» — компьютерная диагностика в Новосибирск">
+<meta property="og:description" content="Автосервис «Транзит»: компьютерная диагностика, ремонт двигателя, ходовая и подвеска. Новосибирск. Звоните — подберём решение и назовём цену.">
+<meta property="og:url" content="https://example.com/">
+<meta property="og:image" content="">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoRepair","name":"Автосервис «Транзит»","description":"Автосервис «Транзит»: компьютерная диагностика, ремонт двигателя, ходовая и подвеска. Новосибирск. Звоните — подберём решение и назовём цену.","openingHours":"Пн–Сб 9:00–20:00, Вс — по записи","aggregateRating":{"@type":"AggregateRating","ratingValue":4.7,"reviewCount":356},"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Компьютерная диагностика"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Ремонт двигателя"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Ходовая и подвеска"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Тормозная система"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Кондиционер"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Регламентное ТО"}}]}</script>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --accent:#ffb020;
+  --accent-2:#ff5b2e;
+  --accent-soft:color-mix(in srgb, #ffb020 18%, transparent);
+  --radius:20px;
+  --container:1160px;
+  --ease:cubic-bezier(.22,.8,.28,1);
+  --font:"Segoe UI",system-ui,-apple-system,"Inter",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+html[data-theme="dark"]{
+  --bg:#0b0d12; --bg-soft:#11141b; --card:rgba(255,255,255,.045); --card-strong:rgba(255,255,255,.075);
+  --text:#f4f6fb; --muted:#a2abbf; --line:rgba(255,255,255,.10); --shadow:0 24px 60px -28px rgba(0,0,0,.85);
+  --glow:0 0 0 1px rgba(255,255,255,.05), 0 30px 70px -40px var(--accent);
+}
+html[data-theme="light"]{
+  --bg:#fbfcfe; --bg-soft:#f3f5fa; --card:#ffffff; --card-strong:#ffffff;
+  --text:#0e1220; --muted:#5a6478; --line:rgba(14,18,32,.10); --shadow:0 24px 50px -30px rgba(14,18,32,.35);
+  --glow:0 0 0 1px rgba(14,18,32,.04), 0 30px 70px -45px var(--accent);
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:hidden}
+body{overflow-x:clip}
+body{
+  margin:0;font-family:var(--font);background:var(--bg);color:var(--text);
+  line-height:1.6;font-size:17px;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button,input,textarea{font:inherit;color:inherit}
+h1,h2,h3,h4{margin:0;line-height:1.1;letter-spacing:-.025em;font-weight:800}
+p{margin:0}
+.wrap{width:100%;max-width:var(--container);margin:0 auto;padding:0 22px}
+.section{padding:96px 0;position:relative}
+.section--soft{background:var(--bg-soft)}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:16px
+}
+.eyebrow::before{content:"";width:26px;height:2px;background:currentColor;border-radius:2px}
+h2.title{font-size:clamp(28px,4vw,46px)}
+.lead{color:var(--muted);font-size:clamp(16px,1.6vw,19px);max-width:70ch;margin-top:16px}
+.head{margin-bottom:52px;max-width:760px}
+
+/* ---------- demo chrome ---------- */
+.demo-bar{
+  position:relative;z-index:60;background:linear-gradient(90deg,var(--accent),var(--accent-2));
+  color:#fff;text-align:center;font-size:13.5px;font-weight:600;padding:9px 16px;letter-spacing:.01em
+}
+.demo-badge{
+  position:fixed;right:16px;bottom:88px;z-index:55;display:flex;align-items:center;gap:8px;
+  background:#11131a;color:#fff;border:1px solid rgba(255,255,255,.18);border-radius:999px;
+  padding:9px 15px;font-size:12.5px;font-weight:700;letter-spacing:.08em;box-shadow:0 18px 40px -18px #000
+}
+.demo-badge i{width:8px;height:8px;border-radius:50%;background:#ff4d4d;box-shadow:0 0 0 4px rgba(255,77,77,.22);animation:pulse 1.8s infinite}
+@keyframes pulse{50%{opacity:.35}}
+
+/* ---------- header ---------- */
+.header{
+  position:sticky;top:0;z-index:50;backdrop-filter:blur(16px);
+  background:color-mix(in srgb,var(--bg) 82%,transparent);
+  border-bottom:1px solid transparent;transition:border-color .3s,background .3s
+}
+.header.is-stuck{border-bottom-color:var(--line)}
+.header-in{display:flex;align-items:center;gap:26px;height:74px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.02em;font-size:19px;white-space:nowrap}
+.logo-mark{
+  width:40px;height:40px;border-radius:13px;display:grid;place-items:center;color:#fff;font-size:17px;font-weight:800;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:0 12px 26px -12px var(--accent)
+}
+.nav{display:flex;gap:26px;margin-left:auto;font-size:15px;font-weight:600}
+.nav a{color:var(--muted);transition:color .25s;position:relative;padding:6px 0}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--accent);transition:right .3s var(--ease)}
+.nav a:hover{color:var(--text)}
+.nav a:hover::after{right:0}
+.header-cta{display:flex;align-items:center;gap:14px}
+.tel{font-weight:700;font-size:15.5px;white-space:nowrap}
+.burger{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:var(--card);align-items:center;justify-content:center;cursor:pointer}
+.burger span{display:block;width:18px;height:2px;background:var(--text);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--text)}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.mobile-nav{display:none;padding:10px 0 26px;border-top:1px solid var(--line)}
+.mobile-nav a{display:block;padding:13px 0;font-weight:600;border-bottom:1px solid var(--line)}
+.header.is-open .mobile-nav{display:block}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 27px;border-radius:14px;
+  font-weight:700;font-size:16px;border:1px solid transparent;cursor:pointer;
+  transition:transform .25s var(--ease),box-shadow .3s,background .3s,color .3s
+}
+.btn--primary{background:linear-gradient(120deg,var(--accent),var(--accent-2));color:#fff;box-shadow:0 18px 40px -18px var(--accent)}
+.btn--primary:hover{transform:translateY(-3px);box-shadow:0 26px 50px -20px var(--accent)}
+.btn--ghost{border-color:var(--line);background:var(--card);color:var(--text)}
+.btn--ghost:hover{transform:translateY(-3px);background:var(--card-strong)}
+.btn--block{width:100%}
+.btn[aria-disabled="true"]{opacity:.72;cursor:not-allowed;transform:none}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:104px 0 92px;overflow:hidden}
+html[data-theme="dark"] .hero::before{
+  content:"";position:absolute;inset:-30% -20% auto;height:120%;pointer-events:none;
+  background:
+    radial-gradient(46% 46% at 18% 24%,color-mix(in srgb,var(--accent) 26%,transparent),transparent 68%),
+    radial-gradient(40% 40% at 82% 12%,color-mix(in srgb,var(--accent-2) 22%,transparent),transparent 70%);
+  filter:blur(70px);opacity:.75
+}
+html[data-theme="light"] .hero::before{
+  content:"";position:absolute;inset:-30% -20% auto;height:120%;pointer-events:none;
+  background:
+    radial-gradient(46% 46% at 18% 24%,color-mix(in srgb,var(--accent) 11%,transparent),transparent 68%),
+    radial-gradient(40% 40% at 82% 12%,color-mix(in srgb,var(--accent-2) 10%,transparent),transparent 70%);
+  filter:blur(60px)
+}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.badge{
+  display:inline-flex;align-items:center;gap:10px;padding:9px 16px;border-radius:999px;
+  border:1px solid var(--line);background:var(--card);font-size:13.5px;font-weight:600;color:var(--muted)
+}
+.badge b{color:var(--text)}
+.hero h1{font-size:clamp(34px,5.4vw,64px);margin:22px 0 0}
+.hero h1 em{font-style:normal;background:linear-gradient(105deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lead{margin-top:20px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hero-note{margin-top:16px;font-size:14px;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.stat{padding:20px 22px;border-radius:18px;background:var(--card);border:1px solid var(--line)}
+.stat b{display:block;font-size:clamp(24px,3vw,34px);letter-spacing:-.03em;font-weight:800;
+  background:linear-gradient(120deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{font-size:13.5px;color:var(--muted)}
+.hero-art{position:relative;aspect-ratio:4/5;border-radius:28px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}
+.hero-art .art-fill{position:absolute;inset:0;background:
+  radial-gradient(70% 60% at 78% 14%,color-mix(in srgb,var(--accent) 62%,transparent),transparent 64%),
+  radial-gradient(62% 62% at 12% 88%,color-mix(in srgb,var(--accent-2) 52%,transparent),transparent 66%),
+  linear-gradient(160deg,var(--bg-soft),var(--bg))}
+.hero-art .art-emoji{position:absolute;inset:0;display:grid;place-items:center;font-size:120px;filter:drop-shadow(0 20px 40px rgba(0,0,0,.35))}
+.hero-art .art-tag{
+  position:absolute;left:18px;right:18px;bottom:18px;padding:16px 18px;border-radius:18px;
+  background:color-mix(in srgb,var(--bg) 78%,transparent);border:1px solid var(--line);backdrop-filter:blur(12px)
+}
+.hero-art .art-tag b{display:block;font-size:16px}
+.hero-art .art-tag span{font-size:13.5px;color:var(--muted)}
+.floaty{animation:floaty 6s ease-in-out infinite}
+@keyframes floaty{50%{transform:translateY(-14px)}}
+
+/* ---------- marquee ---------- */
+.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-soft);overflow:hidden;padding:20px 0}
+.strip-track{display:flex;gap:52px;width:max-content;animation:slide 34s linear infinite}
+.strip:hover .strip-track{animation-play-state:paused}
+.strip-item{display:flex;align-items:center;gap:12px;font-weight:700;color:var(--muted);white-space:nowrap;font-size:15.5px}
+.strip-item::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ---------- cards ---------- */
+.grid{display:grid;gap:22px}
+.grid--3{grid-template-columns:repeat(3,1fr)}
+.grid--4{grid-template-columns:repeat(4,1fr)}
+.card{
+  padding:30px 28px;border-radius:var(--radius);background:var(--card);border:1px solid var(--line);
+  transition:transform .35s var(--ease),border-color .3s,box-shadow .35s,background .3s;position:relative;overflow:hidden
+}
+.card::after{
+  content:"";position:absolute;inset:auto -40% -60% auto;width:220px;height:220px;border-radius:50%;
+  background:radial-gradient(circle,var(--accent-soft),transparent 70%);opacity:0;transition:opacity .4s
+}
+.card:hover{transform:translateY(-6px);border-color:color-mix(in srgb,var(--accent) 45%,var(--line));box-shadow:var(--glow)}
+.card:hover::after{opacity:1}
+.card h3{font-size:20px;margin-bottom:10px}
+.card p{color:var(--muted);font-size:15.5px}
+.icon{
+  width:54px;height:54px;border-radius:16px;display:grid;place-items:center;font-size:25px;margin-bottom:20px;
+  background:linear-gradient(135deg,var(--accent-soft),transparent);border:1px solid color-mix(in srgb,var(--accent) 40%,transparent)
+}
+.price{display:inline-block;margin-top:16px;font-weight:800;font-size:15px;color:var(--accent)}
+
+/* ---------- advantages ---------- */
+.split{display:grid;grid-template-columns:.95fr 1.05fr;gap:60px;align-items:center}
+.adv{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
+.adv:last-child{border-bottom:0}
+.adv-num{
+  flex:0 0 44px;height:44px;border-radius:14px;display:grid;place-items:center;font-weight:800;
+  background:var(--card);border:1px solid var(--line);color:var(--accent)
+}
+.adv b{display:block;font-size:17.5px;margin-bottom:5px}
+.adv p{color:var(--muted);font-size:15.5px}
+
+/* ---------- gallery ---------- */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.tile{
+  position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);aspect-ratio:1/1;
+  background:linear-gradient(150deg,var(--bg-soft),var(--card));display:grid;place-items:center;
+  transition:transform .4s var(--ease),box-shadow .4s
+}
+.tile--wide{grid-column:span 2;aspect-ratio:2/1}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.tile:hover{transform:scale(1.015);box-shadow:var(--shadow)}
+.tile:hover img{transform:scale(1.06)}
+.tile-ph{display:grid;place-items:center;gap:8px;color:var(--muted);font-size:13.5px;text-align:center;padding:14px}
+.tile-ph i{font-size:34px;font-style:normal;opacity:.85}
+
+/* ---------- reviews ---------- */
+.rail{display:flex;gap:20px;overflow-x:auto;padding:6px 4px 24px;scroll-snap-type:x mandatory;scrollbar-width:thin}
+.rail::-webkit-scrollbar{height:6px}
+.rail::-webkit-scrollbar-thumb{background:var(--line);border-radius:8px}
+.review{
+  flex:0 0 380px;scroll-snap-align:start;padding:28px;border-radius:var(--radius);
+  background:var(--card);border:1px solid var(--line)
+}
+.stars{color:#ffb020;letter-spacing:2px;font-size:15px;margin-bottom:14px}
+.review p{font-size:15.8px;color:var(--text)}
+.review footer{display:flex;align-items:center;gap:12px;margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}
+.avatar{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2))}
+.review footer b{display:block;font-size:15px}
+.review footer span{font-size:13px;color:var(--muted)}
+.rail-dots{display:flex;gap:8px;justify-content:center}
+.rail-dots button{width:9px;height:9px;border-radius:50%;border:0;background:var(--line);cursor:pointer;transition:width .3s,background .3s}
+.rail-dots button.is-active{width:26px;border-radius:6px;background:var(--accent)}
+
+/* ---------- faq ---------- */
+.faq{max-width:860px;margin:0 auto}
+details.q{border:1px solid var(--line);border-radius:16px;background:var(--card);margin-bottom:12px;overflow:hidden}
+details.q summary{
+  list-style:none;cursor:pointer;padding:22px 26px;font-weight:700;font-size:17.5px;
+  display:flex;justify-content:space-between;gap:20px;align-items:center
+}
+details.q summary::-webkit-details-marker{display:none}
+details.q summary::after{content:"+";font-size:24px;font-weight:400;color:var(--accent);transition:transform .3s}
+details.q[open] summary::after{transform:rotate(45deg)}
+details.q .a{padding:0 26px 24px;color:var(--muted);font-size:15.8px}
+details.q[open]{border-color:color-mix(in srgb,var(--accent) 40%,var(--line))}
+
+/* ---------- cta ---------- */
+.cta{
+  position:relative;border-radius:30px;padding:56px;overflow:hidden;border:1px solid var(--line);
+  background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 18%,var(--bg-soft)),var(--bg-soft))
+}
+.cta-grid{display:grid;grid-template-columns:1fr .9fr;gap:48px;align-items:center;position:relative}
+.form{display:grid;gap:12px}
+.field{padding:16px 18px;border-radius:14px;border:1px solid var(--line);background:color-mix(in srgb,var(--bg) 70%,transparent);width:100%}
+.field::placeholder{color:var(--muted)}
+.field:focus{outline:2px solid color-mix(in srgb,var(--accent) 55%,transparent);outline-offset:1px}
+.form-note{font-size:13px;color:var(--muted)}
+.locked{
+  padding:22px;border-radius:16px;border:1px dashed color-mix(in srgb,var(--accent) 55%,transparent);
+  background:var(--card);font-size:15px;color:var(--muted)
+}
+.locked b{color:var(--text)}
+
+/* ---------- footer ---------- */
+.footer{border-top:1px solid var(--line);padding:64px 0 0;background:var(--bg-soft)}
+.footer-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr 1fr;gap:38px;padding-bottom:46px}
+.footer h4{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:18px;font-weight:700}
+.footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px;font-size:15.5px;color:var(--muted)}
+.footer li b{color:var(--text);font-weight:600}
+.footer a:hover{color:var(--accent)}
+.footer-bottom{border-top:1px solid var(--line);padding:22px 0;display:flex;justify-content:space-between;gap:16px;font-size:14px;color:var(--muted);flex-wrap:wrap}
+.map{border-radius:20px;overflow:hidden;border:1px solid var(--line);background:var(--card);min-height:190px;display:grid;place-items:center;text-align:center;padding:20px;color:var(--muted);font-size:14px}
+.map iframe{width:100%;height:240px;border:0;display:block}
+
+/* ---------- mobile bar ---------- */
+.mobile-bar{
+  position:fixed;left:12px;right:12px;bottom:12px;z-index:56;display:none;gap:10px;
+  padding:10px;border-radius:20px;background:color-mix(in srgb,var(--bg) 88%,transparent);
+  border:1px solid var(--line);backdrop-filter:blur(14px);box-shadow:var(--shadow)
+}
+.mobile-bar .btn{flex:1;padding:14px 18px;font-size:15px}
+
+/* ---------- reveal ---------- */
+[data-reveal]{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+[data-reveal].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  [data-reveal]{opacity:1;transform:none;transition:none}
+  .floaty,.strip-track{animation:none}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .hero-art{aspect-ratio:16/10;max-height:340px}
+  .grid--4{grid-template-columns:repeat(2,1fr)}
+  .split{grid-template-columns:1fr;gap:36px}
+  .cta-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  .hero{padding:64px 0 60px}
+  .nav,.header-cta .tel{display:none}
+  .burger{display:flex}
+  .header-in{gap:14px;height:66px}
+  .header-cta .btn{padding:12px 18px;font-size:15px}
+  .hero h1{font-size:clamp(28px,8.2vw,40px)}
+  .hero-actions{gap:10px;margin-top:26px}
+  .hero-actions .btn{flex:1 1 auto;padding:14px 18px;font-size:15px;white-space:nowrap}
+  .grid--3{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .tile--wide{grid-column:span 2}
+  .section{padding:70px 0}
+  .card{padding:24px 22px}
+  .stats{grid-template-columns:1fr}
+  .cta{padding:32px 22px;border-radius:24px}
+  .demo-badge{bottom:86px}
+  .mobile-bar{display:flex}
+  body{padding-bottom:84px}
+}
+@media (max-width:520px){
+  body{font-size:16px}
+  .logo{font-size:17px}
+  .logo-mark{width:34px;height:34px;border-radius:11px;font-size:15px}
+  .header-cta .btn{display:none}
+  .footer-grid{grid-template-columns:1fr}
+  .review{flex:0 0 84vw}
+  .hero-actions .btn{flex:1 1 100%}
+  .stat{padding:16px 18px}
+}
+</style>
+</head>
+<body>
+<div class="demo-bar">Демо-версия сайта для «Автосервис «Транзит»» · контакты и данные компании скрыты до оплаты</div>
+
+<header class="header" id="top">
+  <div class="wrap header-in">
+    <a class="logo" href="#top"><span class="logo-mark">🔧</span> Автосервис «Транзит»</a>
+    <nav class="nav">
+      <a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a>
+    </nav>
+    <div class="header-cta">
+      
+      <span class="tel" style="color:var(--muted)">телефон скрыт</span>
+      <a class="btn btn--primary" href="#contact">Оставить заявку</a>
+    </div>
+    <button class="burger" type="button" aria-label="Меню" onclick="document.getElementById('top').classList.toggle('is-open')"><span></span></button>
+  </div>
+  <div class="mobile-nav">
+    <div class="wrap">
+      <a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a>
+      <a href="#contact">Оставить заявку</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="badge" data-reveal><b>Автосервис полного цикла</b> работаем с 2011 года</span>
+      <h1 data-reveal>Автосервис «Транзит» — <em>починим и объясним без «развода»</em></h1>
+      <p class="lead" data-reveal>Диагностируем на подъёмнике, показываем неисправность руками и согласуем смету до начала работ. Ремонтируем японские, корейские и европейские авто, включая гибриды.</p>
+      <div class="hero-actions" data-reveal>
+        <a class="btn btn--primary" href="#contact">Оставить заявку</a>
+        <a class="btn btn--ghost" href="#services">Услуги и цены</a>
+      </div>
+      <p class="hero-note" data-reveal>Ответим в рабочее время, обычно в течение 15 минут.</p>
+      
+      <div class="stats">
+        
+        <div class="stat" data-reveal><b><span class="num" data-to=""></span></b><span></span></div>
+        
+        <div class="stat" data-reveal><b><span class="num" data-to=""></span></b><span></span></div>
+        
+        <div class="stat" data-reveal><b><span class="num" data-to=""></span></b><span></span></div>
+        
+      </div>
+      
+    </div>
+    <div class="hero-art" data-reveal>
+      <div class="art-fill"></div>
+      <div class="art-emoji floaty">🔧</div>
+      <div class="art-tag">
+        <b>Автосервис «Транзит»</b>
+        <span>Ремонт и диагностика · Новосибирск</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="strip">
+  <div class="strip-track">
+    <div class="strip-item"></div><div class="strip-item"></div><div class="strip-item"></div><div class="strip-item"></div><div class="strip-item"></div><div class="strip-item"></div>
+    <div class="strip-item"></div><div class="strip-item"></div><div class="strip-item"></div><div class="strip-item"></div><div class="strip-item"></div><div class="strip-item"></div>
+  </div>
+</div>
+
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="head" data-reveal>
+      <span class="eyebrow">Услуги</span>
+      <h2 class="title">Что мы делаем</h2>
+      <p class="lead">Полный спектр услуг — от консультации до результата. Работаем с частными клиентами и компаниями в Новосибирск.</p>
+    </div>
+    <div class="grid grid--3">
+      
+      <article class="card" data-reveal>
+        <div class="icon"></div>
+        <h3>Автосервис «Транзит» — компьютерная диагностика в Новосибирск</h3>
+        <p></p>
+        
+      </article>
+      
+      <article class="card" data-reveal>
+        <div class="icon"></div>
+        <h3>Автосервис «Транзит» — компьютерная диагностика в Новосибирск</h3>
+        <p></p>
+        
+      </article>
+      
+      <article class="card" data-reveal>
+        <div class="icon"></div>
+        <h3>Автосервис «Транзит» — компьютерная диагностика в Новосибирск</h3>
+        <p></p>
+        
+      </article>
+      
+      <article class="card" data-reveal>
+        <div class="icon"></div>
+        <h3>Автосервис «Транзит» — компьютерная диагностика в Новосибирск</h3>
+        <p></p>
+        
+      </article>
+      
+      <article class="card" data-reveal>
+        <div class="icon"></div>
+        <h3>Автосервис «Транзит» — компьютерная диагностика в Новосибирск</h3>
+        <p></p>
+        
+      </article>
+      
+      <article class="card" data-reveal>
+        <div class="icon"></div>
+        <h3>Автосервис «Транзит» — компьютерная диагностика в Новосибирск</h3>
+        <p></p>
+        
+      </article>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="section section--soft" id="about">
+  <div class="wrap split">
+    <div data-reveal>
+      <span class="eyebrow">О нас</span>
+      <h2 class="title">Почему выбирают Автосервис «Транзит»</h2>
+      <p class="lead">Автосервис «Транзит» — это команда специалистов в Новосибирск. Мы не берём заказы «на поток» и отвечаем за каждый результат.</p>
+      <div class="hero-actions">
+        <a class="btn btn--primary" href="#contact">Оставить заявку</a>
+      </div>
+    </div>
+    <div>
+      
+      <div class="adv" data-reveal>
+        <span class="adv-num"></span>
+        <div><b>Автосервис «Транзит» — компьютерная диагностика в Новосибирск</b><p></p></div>
+      </div>
+      
+      <div class="adv" data-reveal>
+        <span class="adv-num"></span>
+        <div><b>Автосервис «Транзит» — компьютерная диагностика в Новосибирск</b><p></p></div>
+      </div>
+      
+      <div class="adv" data-reveal>
+        <span class="adv-num"></span>
+        <div><b>Автосервис «Транзит» — компьютерная диагностика в Новосибирск</b><p></p></div>
+      </div>
+      
+      <div class="adv" data-reveal>
+        <span class="adv-num"></span>
+        <div><b>Автосервис «Транзит» — компьютерная диагностика в Новосибирск</b><p></p></div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="section section--soft" id="reviews">
+  <div class="wrap">
+    <div class="head" data-reveal>
+      <span class="eyebrow">Отзывы</span>
+      <h2 class="title">Что говорят клиенты</h2>
+      <p class="lead">Собираем отзывы из открытых источников и с площадок, где о нас пишут.</p>
+    </div>
+    <div class="rail" id="rail">
+      
+      <article class="review">
+        <div class="stars"></div>
+        <p></p>
+        <footer>
+          <span class="avatar"></span>
+          <div><b></b><span></span></div>
+        </footer>
+      </article>
+      
+      <article class="review">
+        <div class="stars"></div>
+        <p></p>
+        <footer>
+          <span class="avatar"></span>
+          <div><b></b><span></span></div>
+        </footer>
+      </article>
+      
+      <article class="review">
+        <div class="stars"></div>
+        <p></p>
+        <footer>
+          <span class="avatar"></span>
+          <div><b></b><span></span></div>
+        </footer>
+      </article>
+      
+      <article class="review">
+        <div class="stars"></div>
+        <p></p>
+        <footer>
+          <span class="avatar"></span>
+          <div><b></b><span></span></div>
+        </footer>
+      </article>
+      
+    </div>
+    <div class="rail-dots" id="dots"></div>
+  </div>
+</section>
+
+
+
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="head" style="margin-left:auto;margin-right:auto;text-align:center" data-reveal>
+      <h2 class="title">Частые вопросы</h2>
+    </div>
+    <div class="faq">
+      
+      <details class="q" data-reveal>
+        <summary></summary>
+        <div class="a"></div>
+      </details>
+      
+      <details class="q" data-reveal>
+        <summary></summary>
+        <div class="a"></div>
+      </details>
+      
+      <details class="q" data-reveal>
+        <summary></summary>
+        <div class="a"></div>
+      </details>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="section section--soft" id="contact">
+  <div class="wrap">
+    <div class="cta" data-reveal>
+      <div class="cta-grid">
+        <div>
+          <span class="eyebrow">Контакты</span>
+          <h2 class="title">Свяжитесь с нами</h2>
+          <p class="lead">Оставьте заявку или позвоните — ответим, подскажем и назовём точную стоимость.</p>
+          <ul style="list-style:none;padding:0;margin:26px 0 0;display:grid;gap:14px;font-size:16px">
+            
+            
+            <li><b>Телефон:</b> <span style="color:var(--muted)">скрыт в демо-версии</span></li>
+            <li><b>Адрес:</b> Новосибирск, ул. Станционная, 60</li>
+            <li><b>Часы работы:</b> Пн–Сб 9:00–20:00, Вс — по записи</li>
+            
+          </ul>
+        </div>
+        
+        
+        <div class="locked">
+          <b>Форма заявки, телефон, e-mail и ссылки на соцсети появятся здесь</b><br>
+          сразу после оплаты — мы подставим ваши реальные контакты и подключим приём заявок.
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="#top"><span class="logo-mark">🔧</span> Автосервис «Транзит»</a>
+        <p style="color:var(--muted);font-size:15px;margin-top:16px;max-width:34ch">Ремонт и диагностика · Новосибирск</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <ul><li><a href=""></a></li><li><a href=""></a></li><li><a href=""></a></li><li><a href=""></a></li><li><a href=""></a></li></ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <ul>
+          
+          
+          <li>Телефон: скрыт в демо</li>
+          <li>Новосибирск, ул. Станционная, 60</li>
+          <li>Пн–Сб 9:00–20:00, Вс — по записи</li>
+          
+        </ul>
+      </div>
+      <div>
+        <h4>Как нас найти</h4>
+        <div class="map">Карта проезда появится в полной версии сайта</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="yr">2026</span> Автосервис «Транзит». Все права защищены.</span>
+      <span>Сайт работает круглосуточно, отвечаем в рабочее время.</span>
+    </div>
+  </div>
+</footer>
+
+
+<div class="demo-badge"><i></i> ДЕМО</div>
+<div class="mobile-bar">
+  <a class="btn btn--ghost" href="#contact">Контакты</a>
+  <a class="btn btn--primary" href="#services">Услуги</a>
+</div>
+
+
+
+<script>
+(function(){
+  var header=document.querySelector('.header');
+  var onScroll=function(){ if(window.scrollY>8) header.classList.add('is-stuck'); else header.classList.remove('is-stuck'); };
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+
+  var items=[].slice.call(document.querySelectorAll('[data-reveal]'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e,i){
+        if(e.isIntersecting){
+          var el=e.target;
+          setTimeout(function(){ el.classList.add('in'); }, Math.min(i*70,420));
+          io.unobserve(el);
+        }
+      });
+    },{rootMargin:'0px 0px -8% 0px',threshold:.12});
+    items.forEach(function(el){ io.observe(el); });
+  } else { items.forEach(function(el){ el.classList.add('in'); }); }
+
+  var nums=[].slice.call(document.querySelectorAll('.num'));
+  var run=function(el){
+    var to=parseFloat(el.getAttribute('data-to'))||0;
+    var dur=1100, t0=performance.now(), dec=(String(to).split('.')[1]||'').length;
+    var step=function(t){
+      var p=Math.min((t-t0)/dur,1), e=1-Math.pow(1-p,3);
+      el.textContent=(to*e).toFixed(dec);
+      if(p<1) requestAnimationFrame(step); else el.textContent=to.toFixed(dec);
+    };
+    requestAnimationFrame(step);
+  };
+  if('IntersectionObserver' in window){
+    var io2=new IntersectionObserver(function(en){ en.forEach(function(e){ if(e.isIntersecting){ run(e.target); io2.unobserve(e.target); } }); },{threshold:.6});
+    nums.forEach(function(n){ io2.observe(n); });
+  }
+
+  var rail=document.getElementById('rail'), dots=document.getElementById('dots');
+  if(rail&&dots){
+    var cards=[].slice.call(rail.children);
+    cards.forEach(function(c,i){
+      var b=document.createElement('button'); if(i===0) b.className='is-active';
+      b.addEventListener('click',function(){ rail.scrollTo({left:c.offsetLeft-rail.offsetLeft,behavior:'smooth'}); });
+      dots.appendChild(b);
+    });
+    var btns=[].slice.call(dots.children);
+    rail.addEventListener('scroll',function(){
+      var idx=Math.round(rail.scrollLeft/Math.max(rail.scrollWidth-rail.clientWidth,1)*(cards.length-1));
+      btns.forEach(function(b,i){ b.className=i===idx?'is-active':''; });
+    },{passive:true});
+  }
+
+  var navLinks=[].slice.call(document.querySelectorAll('.nav a'));
+  var secs=navLinks.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  window.addEventListener('scroll',function(){
+    var y=window.scrollY+120, active=null;
+    secs.forEach(function(s){ if(s.offsetTop<=y) active=s; });
+    navLinks.forEach(function(a){ a.style.color = (active && a.getAttribute('href')==='#'+active.id) ? 'var(--text)' : ''; });
+  },{passive:true});
+
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+function wcSubmit(f){
+  f.querySelector('button').textContent='Отправляем…';
+  return true;
+}
+</script>
+</body>
+</html>
